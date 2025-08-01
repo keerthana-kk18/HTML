@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+        .navbar{
+            text-align: right;
+            color: white;
+            font-size: larger;
+        }
+        .navbar ul li{
+            display: inline;
+            margin-left: 20px;
+        }
+        .main{
+            background-image: url(dropdownnn.jpg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .a{
+            height: 80px;
+            width: 1500px;
+            background-color: rgb(141, 76, 76) ;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: rgb(141, 76, 76);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown2{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content2{
+            display: none;
+            position: absolute;
+            background-color: rgb(141, 76, 76);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+
+        }
+        .dropdown2:hover .dropdown-content2{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="a">
+            <div class="navbar" style="margin-right: 200px;"><br>
+                <ul>
+                    <li><i class="fa-solid fa-house"></i>Home</li>
+                    <li><i class="fa-solid fa-user"></i>About Us</li>
+                    <div class="dropdown">
+                        <li><i class="fa-solid fa-file"></i>Services
+                            <div class="dropdown-content">
+                                <p>Web Designing</p>
+                                <p>Marketing</p>
+                                <div class="dropdown2">
+                                     <p>Mobile App
+                                        <div class="dropdown-content2">
+                                            <p>Android App</p>
+                                            <p>IOS App</p>
+                                            <p>Ionic App</p>
+                                            <p>Flutter App</p>
+                                            <p>Unity App</p>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    <li><i class="fa-solid fa-user-group"></i>Clients</li>
+                    <li><i class="fa-solid fa-hand-peace"></i>Investers</li>
+                    <li><i class="fa-solid fa-indian-rupee-sign"></i>Pricing</li>
+                    <li><i class="fa-solid fa-clipboard"></i>Training</li>
+                    <li><i class="fa-solid fa-phone"></i>contact</li>   
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

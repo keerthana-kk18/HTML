@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: 'Open Sans',sans-serif;
+    }
+    body{
+        background: #f8fdfc;
+        color: #333;
+    }
+    .container{
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+    }
+    header{
+        background: white;
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+    }
+    .logo{
+        float: left;
+        font-size: 24px;
+        font-weight: bold ;
+    }
+    .logo span{
+        color: #4caf50;
+    }
+    nav{
+        float: right;
+    }
+    nav ul{
+        list-style: none;
+    }
+    nav ul li{
+        display: inline-block;
+        margin-left: 20px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #333;
+        /* transition: color 0.3s; */
+    }
+    nav ul li a.active,nav ul li:hover{
+        color: #4caf50; 
+
+    }
+    
+    .a{
+        display: flex;
+        align-items: center;
+        padding: 60px;
+        background: #f4f9f6;
+
+    }
+    .aa{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .a.text{
+        flex: 1;
+        padding-right: 40px;
+    }
+    .a.text h1{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .a.text p{
+        margin-bottom: 30px;
+    }
+    .aimg{
+        flex: 1;
+        text-align: center;
+    }
+    .aimg img{
+        max-width: 100%;
+        height: auto;
+    }
+    .features{
+        background: #fff;
+        padding: 60px;
+
+    }
+    .featuresss{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 30px;
+    }
+    .box{
+
+        background: white;
+        border: 2px solid black;
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .box:hover{
+        box-shadow: 4px 20px rgba(0,0,0,0,1);
+    }
+    .box img{
+        margin-bottom: 15px;
+    }
+    .box h3{
+        font-size: 18px;
+    }
+  
+
+</style>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><span>e</span>Startup</div>
+            <nav>
+                <ul>
+                    <li class="active" style="color:  #58ca7b;">Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Features</li>
+                    <li>Pricing</li>
+                    <li>Dropdown</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="a">
+        <div class="container aa">
+            <div class="text">
+                <h1>eStartup</h1>
+                <p>sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet.<br> Eum quas beatae cumqueeum quaerat.</p>
+                <input type="button" value="Get Started" style="background-color: lightgreen; color: aliceblue;border-radius:10px; border: none;">
+                <i class="fa-regular fa-circle-play fa-2xs" style="color: #58ca7b;"></i>Watch Video
+            </div>
+            <div class="aimg">
+                <img src="system.jpeg" alt="image"/>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="conatainer featuresss">
+            <div class="box">
+                <img src="https://img.icons8.com/ios-filled/50/4CAF50/folder-invoices--v1.png" alt="icon"/>
+                <h3>Lorem Ipsum</h3>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/ios-filled/50/4CAF50/diamond.png" alt="Icon" />
+                <h3>Sed ut perspiciatis</h3>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/ios-filled/50/4CAF50/marker.png" alt="Icon" />
+                <h3>Magni Dolores</h3>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/ios-filled/50/4CAF50/workflow.png" alt="Icon" />
+                <h3>Nemo Enim</h3>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
