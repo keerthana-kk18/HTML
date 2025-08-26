@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .a{
+        width: 200px;
+        height: 200px;
+        background-color: violet;
+        position: relative;
+        animation-name: example;
+        animation-duration: 4s;
+    }
+    @keyframes example{
+        0% {background-color: violet;left: 0px;top: 0px;}
+        25% {background-color: purple;left: 200px;top: 0px;}
+        50% {background-color: yellow;left: 200px;top: 200px;}
+        75% {background-color: rgb(108, 108, 181);left: 0px;top: 200px;}
+        100% {background-color: rgb(75, 214, 226);left: 0px;top: 0px;}
+    }
+</style>
+<body>
+    <div class="a"></div>
+    
+</body>
+</html>

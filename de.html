@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        /* .box{
+            width: 80%;
+            background: white;
+            text-align: start;
+            padding: 10px;
+            box-shadow: 0 7px 50px #e0dfdf;
+            border-radius: 20px;
+        } */
+        /* .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 40px;
+            background-color: white;
+       } */
+
+    .column {
+      flex: 1 1 30%;
+      background-color: #fafafa;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+
+        .column img {
+             width: 100%;
+             height: 200px;
+             object-fit: cover;
+             border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+    .column h2 {
+      margin-bottom: 10px;
+      font-size: 1.3em;
+    }
+
+    .column p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+
+          
+        .head{
+            align-items: 20px;
+            padding: 1px;
+            background-color: rgb(239, 238, 238);
+        }
+        .main{
+            text-align: center;
+            background-color:rgb(239,238,238);
+            padding: 10px;
+        }
+      .nav{
+        background-color:whitesmoke;
+        color: rgb(49, 49, 49);
+        display: flex;
+        text-align: right;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px;
+          
+    }
+    /* nav h2{ */
+    /* background-color: rgb(232, 229, 229);
+    margin: 0; */
+
+    .nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    
+}
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!-- <div class="nav h2"> -->
+    <h1>Newspaper.</h1></div></div>
+    <div class="nav">
+    <h1 style="color: black;">Newspaper.</h1>
+        <ul>
+            <li>Home page</li>
+            <li>Simple post</li>
+            <li>About us</li>
+            <li>Blog</li>
+        </ul>  
+    </div>
+    <!-- <div class="container"> -->
+        <div class="column">
+            <h2>Fashion Category</h2>
+           <img src="newspaper1.avif" alt="Fashion Category" class="img">
+           <p><strong>11 December 2021</strong> - Some interesting inspirations and camera settings during the photo session. We create something better with every shot.</p>
+        </div>
+      <div class="column">
+            <h2>Modern Post</h2>
+            <img src="newspaper2.avif" alt="Modern Post" class="img"></div>
+            <p><strong>11 December 2021</strong> - Newspaper creates with a hobby. We focus on the development of our articles to provide engaging content.</p>
+       </div>
+       <div class="column">
+            <h2>Latest Trends</h2>
+            <p>In the world of fashion, staying on top of trends is crucial. Our latest trends section explores the styles that are making waves in the industry today.</p>
+      </div>
+      <div class="column">
+      <h2>Fashion Bloggers</h2>
+      <p>Meet the individuals who are shaping the fashion world. Veronica Berloci and Anita Romulo bring their unique perspectives to our publication.</p>
+      </div>
+    <!-- </div> -->
+</body>
+<div class="head">
+    <center><h5>Newspaper.© 2024</h5></center>
+    </div>
+</html>

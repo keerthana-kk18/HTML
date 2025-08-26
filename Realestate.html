@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .left{
+        display: flex;
+        /* justify-content: space-between; */
+        /* align-items: center; */
+        /* padding: 20px; */
+        color: white;
+    }
+    .right{
+        font-family: Arial,sans-serif;
+        color: white;
+        font-size: medium;
+        /* padding: 20px; */
+    }
+    .bgimg{
+        background-image: url(housef.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+        width: 100%;
+        /* opacity: 60%; */
+    }
+    .box{
+        width: 400px;
+        height: 200px;
+        background-color: rgb(8, 8, 0.5);
+        /* border: 1px solid black; */
+        transform: translate(50px,100px);
+        /* transition: width 2s; */
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .boxtxt{
+        color: white;
+    }
+    .box:hover{
+        width: 400px;
+    }
+    .btn{
+        width: 150px;
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 14px;
+        background-color: rgb(46, 125,90);
+        color: white;
+    }
+    .txt{
+        width: auto;
+        height: auto;
+        min-height: 300px;
+        box-sizing: border-box;
+        background-color:  rgb(46,125,90);
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        color: white;
+        font-size: 23px;
+        line-height: 1.3;
+    }
+    .features{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 40px;
+        background-color: white;
+        color: black;
+    }
+    .featurebox{
+        flex: 1;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s ;
+
+    }
+    .featurebox:hover{
+        transform: translateY(-5px);
+    }
+    /* .icon{
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+    } */
+
+</style>
+<body>
+    <div class="bgimg">
+        <div class="left">
+            <h2 style="margin-left: 100px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"> <i class="fa-solid fa-house"></i><b> Real Estate</b></h2>
+        <div class="right">
+            <h6 style="margin-left: 1000px;">24/7 Call Us<b>1-800-426-8888</b></h6>
+       </div>
+       </div>
+       <div class="box">
+            <div class="boxtxt">
+                <h1 style="font-weight: 700;margin-left: 20px;font-family: 'Poppins', 'Arial', sans-serif;"><b>FIND YOUR PERFECT FUTURE HOME</b></h1>
+                 <input type="button" value="Contact Us" class="btn" style="margin-left: 30px;color: white;background-color: rgb(46,125,90);">
+            </div>
+       </div>
+    </div>
+    <div class="txt">
+        <h2>How to Make Real Estate Business<br>Increase of Your Luxury Home</h2>
+        <p style="font-size: smaller;">On the other hand,we denounce with righteous indignation and dislike men who are so<br> beguiled and demoralized by the charms of pleasure of the desire trouble. </p>
+    </div>
+    <div class="features">
+        <div class="featurebox">
+            <i class="fa-solid fa-house-chimney-crack" style="color: #090a0b;"></i>
+            <h3 style="font-weight: 500;"><b>Best Homes</b></h3>
+            <p>There are many variations of passages of Lorem Ipsum available,but the majority have suffered alteration.</p>
+        </div>
+        <div class="featurebox">
+            <i class="fa-solid fa-tags" style="color: #0a0c0f;"></i>
+            <h3 style="font-weight: 500;"><b>Great Prices</b></h3>
+            <p>There are many variations of passages of Lorem Ipsum available,but the majority have suffered alteration.</p>
+        </div>
+        <div class="featurebox">
+            <i class="fa-solid fa-user-group" style="color: #080a0c;"></i>
+            <h3 style="font-weight: 500;"><b>Free Support</b></h3>
+             <p>There are many variations of passages of Lorem Ipsum available,but the majority have suffered alteration.</p>
+        </div>
+    </div>
+</body>
+</html>
